@@ -1,4 +1,41 @@
-# Understanding the Mahābhārata Dating Paper: A Simple Guide
+# Understanding "_Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis_" Paper: A Simple Guide
+
+---
+
+## Publication Details
+
+| Field | Value |
+|-------|-------|
+| **DOI** | [10.5281/zenodo.18100709](https://doi.org/10.5281/zenodo.18100709) |
+| **Resource Type** | Preprint |
+| **Publisher** | Zenodo |
+| **Language** | English |
+| **License** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
+| **Copyright** | © 2025 Prasanjit Singh |
+
+---
+
+## How to Cite
+
+Singh, P. (2025). *Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis*. Zenodo. https://doi.org/10.5281/zenodo.18100709
+
+---
+
+## BibTeX
+```bibtex
+@misc{singh2025mahabharata,
+  author       = {Singh, Prasanjit},
+  title        = {Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.18100709},
+  url          = {https://doi.org/10.5281/zenodo.18100709}
+}
+```
+
+---
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18100709.svg)](https://doi.org/10.5281/zenodo.18100709)
 
 ## What is This Paper About?
 
