@@ -2,7 +2,7 @@
 
 ## What is This Paper About?
 
-Imagine you find your grandfather's old diary, and he mentions "the day the big storm came" or "when the comet appeared." If you knew exactly when those events happened, you could figure out when he wrote the diary. 
+Imagine you find your grandmothers old diary, and she mentions "the day the big storm came" or "when the comet appeared." If you knew exactly when those events happened, you could figure out when she wrote the diary. 
 
 This paper does something similar — but for an ancient Indian epic that's over 7,500 years old.
 
