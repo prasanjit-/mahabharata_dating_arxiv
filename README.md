@@ -1,4 +1,12 @@
-# Understanding "_Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis_" Paper: A Simple Guide
+<div align="center">
+
+# A Simple Guide to Understanding - "Dating the Mahābhārata" Paper
+
+> **Mathematical Verification of the 5561 BCE Hypothesis**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18100709.svg)](https://doi.org/10.5281/zenodo.18100709)
+
+</div>
 
 ---
 
@@ -14,28 +22,6 @@
 | **Copyright** | © 2025 Prasanjit Singh |
 
 ---
-
-## How to Cite
-
-Singh, P. (2025). *Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis*. Zenodo. https://doi.org/10.5281/zenodo.18100709
-
----
-
-## BibTeX
-```bibtex
-@misc{singh2025mahabharata,
-  author       = {Singh, Prasanjit},
-  title        = {Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis},
-  year         = {2025},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.18100709},
-  url          = {https://doi.org/10.5281/zenodo.18100709}
-}
-```
-
----
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18100709.svg)](https://doi.org/10.5281/zenodo.18100709)
 
 ## What is This Paper About?
 
@@ -265,6 +251,29 @@ That's what this paper does for the Mahābhārata.
 - **Nilesh Oak's Book:** "When Did the Mahabharata War Happen?: The Mystery of Arundhati" (2011)
 - **Stellarium:** Free planetarium software where you can see the ancient sky yourself
 - **NASA Horizons:** Tool to calculate ancient planetary positions
+
+---
+## How to Cite
+
+Singh, P. (2025). *Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis*. Zenodo. https://doi.org/10.5281/zenodo.18100709
+
+---
+
+## BibTeX
+```bibtex
+@misc{singh2025mahabharata,
+  author       = {Singh, Prasanjit},
+  title        = {Dating the Mahābhārata: Mathematical Verification of the 5561 BCE Hypothesis},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.18100709},
+  url          = {https://doi.org/10.5281/zenodo.18100709}
+}
+```
+
+---
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18100709.svg)](https://doi.org/10.5281/zenodo.18100709)
 
 ---
 
