@@ -1,6 +1,6 @@
 <div align="center">
 
-# A Simple Guide to Understanding - "Dating the Mahābhārata" Paper
+# A Layman's Guide to Understanding - "Mathematical Verification of Dating the Mahābhārata" Paper
 
 > **Mathematical Verification of the 5561 BCE Hypothesis**
 
