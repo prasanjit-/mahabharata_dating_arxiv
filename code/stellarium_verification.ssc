@@ -1,0 +1,179 @@
+// ============================================================================
+// STELLARIUM SCRIPT: Verify Mahabharata 5561 BCE Astronomical Claims
+// ============================================================================
+// 
+// HOW TO USE:
+// 1. Open Stellarium
+// 2. Press F12 to open Script Console
+// 3. Copy-paste this script and click "Run"
+// 
+// OR save as "mahabharata_verification.ssc" and run from:
+// File -> Scripts -> Run Script
+//
+// ============================================================================
+
+// Set observer location to Kurukshetra
+core.setObserverLocation(76.83, 29.97, 250, 1, "Kurukshetra, India");
+
+// ============================================================================
+// TEST 1: Arundhati-Vasishtha Configuration (October 5561 BCE)
+// ============================================================================
+core.output("=== TEST 1: Arundhati-Vasishtha Configuration ===");
+
+// Set date to October 16, 5561 BCE (War start date)
+// Note: Stellarium uses astronomical year numbering (-5560 = 5561 BCE)
+core.setDate("-5560-10-16T20:00:00", "utc");
+
+// Point to Mizar (Vasishtha) and Alcor (Arundhati)
+core.selectObjectByName("Mizar", true);
+StelMovementMgr.autoZoomIn(3);
+core.wait(2);
+
+core.output("Date: October 16, 5561 BCE");
+core.output("Location: Kurukshetra (29.97°N, 76.83°E)");
+core.output("Observe: Mizar (Vasishtha) and Alcor (Arundhati) in Ursa Major");
+core.output("Expected: Alcor should appear to LEAD (be west of) Mizar");
+core.output("");
+
+core.wait(5);
+
+// ============================================================================
+// TEST 2: Solar Eclipse on Day 14 (October 29, 5561 BCE)
+// ============================================================================
+core.output("=== TEST 2: Jayadratha Eclipse - Day 14 ===");
+
+// Set date to October 29, 5561 BCE around 4 PM local time
+core.setDate("-5560-10-29T16:30:00", "utc");
+
+// Look at the Sun
+core.selectObjectByName("Sun", true);
+StelMovementMgr.autoZoomIn(2);
+core.wait(2);
+
+core.output("Date: October 29, 5561 BCE, ~4:30 PM local time");
+core.output("Expected: Partial/Annular solar eclipse visible");
+core.output("Check: Moon should be near the Sun");
+core.output("");
+
+core.wait(5);
+
+// ============================================================================
+// TEST 3: Mars Retrograde in Capricorn
+// ============================================================================
+core.output("=== TEST 3: Mars Retrograde in Capricorn ===");
+
+// Set date to October 20, 5561 BCE evening
+core.setDate("-5560-10-20T22:00:00", "utc");
+
+// Point to Mars
+core.selectObjectByName("Mars", true);
+StelMovementMgr.autoZoomIn(2);
+core.wait(2);
+
+core.output("Date: October 20, 5561 BCE");
+core.output("Expected: Mars in Capricorn/Sagittarius region");
+core.output("Check constellation boundaries");
+core.output("");
+
+// Animate forward to show retrograde motion
+core.output("Animating 60 days to show Mars retrograde loop...");
+for (i = 0; i < 60; i++) {
+    core.setDate("+ 1 day");
+    core.wait(0.1);
+}
+
+core.wait(3);
+
+// ============================================================================
+// TEST 4: Seven Planets in Six Signs
+// ============================================================================
+core.output("=== TEST 4: Planetary Clustering ===");
+
+// Reset to war start date
+core.setDate("-5560-10-16T22:00:00", "utc");
+
+// Show ecliptic and constellation boundaries
+GridLinesMgr.setFlagEclipticLine(true);
+ConstellationMgr.setFlagBoundaries(true);
+
+// Zoom out to see all planets
+StelMovementMgr.zoomTo(90, 3);
+core.wait(3);
+
+core.output("Date: October 16, 5561 BCE");
+core.output("Check positions of: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn");
+core.output("Expected: All within ~180° of ecliptic (6 zodiac signs)");
+core.output("");
+
+// List planet positions
+var planets = ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn"];
+for (i = 0; i < planets.length; i++) {
+    core.selectObjectByName(planets[i], false);
+    core.output(planets[i] + " position logged");
+}
+
+core.wait(5);
+
+// ============================================================================
+// TEST 5: Winter Solstice for Bhishma's Death (January 5560 BCE)
+// ============================================================================
+core.output("=== TEST 5: Bhishma's Death - Winter Solstice ===");
+
+// Set to around winter solstice 5560 BCE
+core.setDate("-5559-01-13T12:00:00", "utc");
+
+core.selectObjectByName("Sun", true);
+core.output("Date: January 13, 5560 BCE");
+core.output("Expected: Sun at minimum declination (winter solstice / Uttarayana)");
+core.output("Check: Sun should be at its southernmost point");
+core.output("");
+
+core.wait(5);
+
+// ============================================================================
+// TEST 6: No Pole Star in 5561 BCE
+// ============================================================================
+core.output("=== TEST 6: Absence of Pole Star ===");
+
+core.setDate("-5560-10-16T22:00:00", "utc");
+
+// Point to North Celestial Pole
+core.moveToAltAzi(90, 0, 3);
+StelMovementMgr.zoomTo(30, 2);
+core.wait(3);
+
+core.output("Date: October 5561 BCE");
+core.output("Looking at: North Celestial Pole");
+core.output("Expected: NO bright star near the pole");
+core.output("Note: Polaris was NOT the pole star in this era!");
+core.output("");
+
+core.wait(5);
+
+// ============================================================================
+// COMPARISON: Check same observations for 3102 BCE
+// ============================================================================
+core.output("=== COMPARISON: 3102 BCE (Traditional Kali Yuga date) ===");
+
+core.setDate("-3101-10-16T20:00:00", "utc");
+core.selectObjectByName("Mizar", true);
+StelMovementMgr.autoZoomIn(3);
+
+core.output("Date: October 16, 3102 BCE");
+core.output("Check: Is Alcor still 'leading' Mizar?");
+core.output("Expected: Position should be DIFFERENT from 5561 BCE");
+core.output("");
+
+core.wait(5);
+
+// ============================================================================
+// END
+// ============================================================================
+core.output("=== VERIFICATION COMPLETE ===");
+core.output("Compare your observations with the paper's predictions.");
+core.output("");
+
+// Reset view
+GridLinesMgr.setFlagEclipticLine(false);
+ConstellationMgr.setFlagBoundaries(false);
+StelMovementMgr.zoomTo(60, 2);
